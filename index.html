@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Djamila Chaïbi, chargée de projet digital</title>
+<meta name="description" content="Portfolio de Djamila Chaïbi, chargée de projet digital : communication, data et coordination.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top" id="top">
+  <a class="brand" href="#accueil" data-i18n="name"></a>
+  <nav aria-label="Menu principal"><ul id="menu"></ul></nav>
+  <div class="tools">
+    <button id="lang" class="pill" type="button"></button>
+    <button id="burger" class="pill" type="button" aria-label="Menu" aria-expanded="false">Menu</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="accueil">
+    <canvas id="web" aria-hidden="true"></canvas>
+    <div class="hero-in">
+      <div class="copy">
+        <p class="who" data-i18n="name"></p>
+        <h1 data-i18n="h1"></h1>
+        <p class="role" data-i18n="role"></p>
+        <p class="actions">
+          <a class="btn primary" href="about.html" data-i18n="cta1"></a>
+          <a class="btn" href="#contact" data-i18n="cta2"></a>
+        </p>
+      </div>
+      <div class="photo"><img src="photo.jpg" alt="Portrait de Djamila Chaïbi" onerror="this.remove()"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="reperes">
+    <h2 data-i18n="statsTitle"></h2>
+    <div class="stats" id="stats"></div>
+  </section>
+
+  <section class="sec" id="articles">
+    <div class="head"><h2 data-i18n="articlesTitle"></h2>
+      <span class="arrows"><button class="pill" data-scroll="articles-track" data-dir="-1" aria-label="Précédent">&larr;</button><button class="pill" data-scroll="articles-track" data-dir="1" aria-label="Suivant">&rarr;</button></span></div>
+    <div class="track" id="articles-track" tabindex="0"></div>
+  </section>
+
+  <section class="sec" id="creations">
+    <div class="head"><h2 data-i18n="creationsTitle"></h2>
+      <span class="arrows"><button class="pill" data-scroll="creations-track" data-dir="-1" aria-label="Précédent">&larr;</button><button class="pill" data-scroll="creations-track" data-dir="1" aria-label="Suivant">&rarr;</button></span></div>
+    <div class="track" id="creations-track" tabindex="0"></div>
+  </section>
+
+  <section class="sec" id="parcours">
+    <h2 data-i18n="timelineTitle"></h2>
+    <ol class="timeline" id="timeline"></ol>
+  </section>
+</main>
+
+<footer class="foot" id="contact">
+  <div class="sec">
+    <h2 data-i18n="contactTitle"></h2>
+    <p data-i18n="contactText"></p>
+    <p class="links">
+      <a id="mail" href="#"></a>
+      <a data-link="linkedin" data-i18n="linkedin" href="#"></a>
+      <a data-link="github" data-i18n="github" href="#"></a>
+      <a data-link="linktree" data-i18n="linktree" href="#"></a>
+    </p>
+  </div>
+</footer>
+
+<script src="content.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
